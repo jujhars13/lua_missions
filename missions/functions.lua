@@ -2,7 +2,7 @@ function test_local_function_inside_another_function()
   local function foo()
     return 'foo'
   end
-  assert_equal(__, foo())
+  assert_equal('foo', foo())
 end
 
 function test_local_function_with_parameters()
@@ -142,5 +142,3 @@ function test_variable_number_of_arguments_with_dot_dot_dot()
   end
   assert_equal(__, third('a','b','c','d'))
 end
-
-
